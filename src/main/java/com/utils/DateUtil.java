@@ -226,6 +226,13 @@ public class DateUtil {
         Date date = localDateTime2Date(localDateTime);
         return date;
     }
+    
+    public LocalDateTime dateToLocalDateTime(Date date) {
+        Instant instant = date.toInstant();
+        ZoneId zone = ZoneId.systemDefault();
+        LocalDateTime localDateTime = LocalDateTime.ofInstant(instant, zone);
+        return localDateTime;
+    }
 
     /**
      * LocalDateTime转换为Date
