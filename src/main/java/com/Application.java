@@ -7,10 +7,10 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 public class Application {
 
     public static void main(String[] args) {
-
         SpringApplication.run(Application.class, args);
-        System.out.println("success7");
-        System.out.println("success10");
+        System.out.println("success9");
+        System.out.println("success8");
+
     }
 
 }
